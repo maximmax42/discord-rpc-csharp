@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BaseRichPresence | Discord RPC C# </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BaseRichPresence | Discord RPC C# ">
+      
+      <meta name="description" content="The base rich presence structure">
+      <link rel="icon" href="../Resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/maximmax42/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_BaseRichPresence.md&amp;value=---%0Auid%3A%20DiscordRPC.BaseRichPresence%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../Resources/logo-small.png" alt="Discord RPC C#">
+            Discord RPC C#
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DiscordRPC.BaseRichPresence">
+
+
+
+  <h1 id="DiscordRPC_BaseRichPresence" data-uid="DiscordRPC.BaseRichPresence" class="text-break">
+Class BaseRichPresence  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DiscordRPC.html">DiscordRPC</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DiscordRPC.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The base rich presence structure</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+[Serializable]
+public class BaseRichPresence</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BaseRichPresence</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="DiscordRPC.RichPresence.html">RichPresence</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="DiscordRPC_BaseRichPresence__details" data-uid="DiscordRPC.BaseRichPresence._details">
+  _details
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inernal inner detail string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _details</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DiscordRPC_BaseRichPresence__detailsUrl" data-uid="DiscordRPC.BaseRichPresence._detailsUrl">
+  _detailsUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inernal inner detail URL string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _detailsUrl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DiscordRPC_BaseRichPresence__state" data-uid="DiscordRPC.BaseRichPresence._state">
+  _state
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inernal inner state string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _state</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DiscordRPC_BaseRichPresence__stateUrl" data-uid="DiscordRPC.BaseRichPresence._stateUrl">
+  _stateUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inernal inner state URL string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _stateUrl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="DiscordRPC_BaseRichPresence_Assets_" data-uid="DiscordRPC.BaseRichPresence.Assets*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Assets" data-uid="DiscordRPC.BaseRichPresence.Assets">
+  Assets
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The names of the images to use and the tooltips to give those images.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;assets&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public Assets Assets { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.Assets.html">Assets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_Details_" data-uid="DiscordRPC.BaseRichPresence.Details*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Details" data-uid="DiscordRPC.BaseRichPresence.Details">
+  Details
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>What the user is currently doing. For example, &quot;Competitive - Total Mayhem&quot;.</p>
+<p>Max 128 characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;details&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public string Details { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_DetailsUrl_" data-uid="DiscordRPC.BaseRichPresence.DetailsUrl*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_DetailsUrl" data-uid="DiscordRPC.BaseRichPresence.DetailsUrl">
+  DetailsUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>URL that is linked to when clicking on the details text in the activity card.</p>
+<p>Max 256 characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;details_url&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public string DetailsUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_Party_" data-uid="DiscordRPC.BaseRichPresence.Party*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Party" data-uid="DiscordRPC.BaseRichPresence.Party">
+  Party
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The party the player is currently in. The <a class="xref" href="DiscordRPC.Party.html#DiscordRPC_Party_ID">ID</a> must be set for this to be included in the RichPresence update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;party&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public Party Party { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.Party.html">Party</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_Secrets_" data-uid="DiscordRPC.BaseRichPresence.Secrets*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Secrets" data-uid="DiscordRPC.BaseRichPresence.Secrets">
+  Secrets
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The secrets used for Joining. Secrets are obfuscated data of your choosing. They could be match ids, player ids, lobby ids, etc. Make this object null if you do not wish too / unable too implement the Join / Request feature.</p>
+<p>To keep security on the up and up, Discord requires that you properly hash/encode/encrypt/put-a-padlock-on-and-swallow-the-key-but-wait-then-how-would-you-open-it your secrets.</p>
+<p>Visit the <a href="https://discordapp.com/developers/docs/rich-presence/how-to#secrets">Rich Presence How-To</a> for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;secrets&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public Secrets Secrets { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.Secrets.html">Secrets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_State_" data-uid="DiscordRPC.BaseRichPresence.State*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_State" data-uid="DiscordRPC.BaseRichPresence.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The user's current <a class="xref" href="DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence_Party">Party</a> status. For example, &quot;Playing Solo&quot; or &quot;With Friends&quot;.</p>
+<p>Max 128 characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;state&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public string State { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_StateUrl_" data-uid="DiscordRPC.BaseRichPresence.StateUrl*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_StateUrl" data-uid="DiscordRPC.BaseRichPresence.StateUrl">
+  StateUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>URL that is linked to when clicking on the details text in the activity card.</p>
+<p>Max 256 characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;state_url&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public string StateUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_StatusDisplay_" data-uid="DiscordRPC.BaseRichPresence.StatusDisplay*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_StatusDisplay" data-uid="DiscordRPC.BaseRichPresence.StatusDisplay">
+  StatusDisplay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The display type for the status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status_display_type&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public StatusDisplayType StatusDisplay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.StatusDisplayType.html">StatusDisplayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_Timestamps_" data-uid="DiscordRPC.BaseRichPresence.Timestamps*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Timestamps" data-uid="DiscordRPC.BaseRichPresence.Timestamps">
+  Timestamps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time elapsed / remaining time data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;timestamps&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public Timestamps Timestamps { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.Timestamps.html">Timestamps</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_Type_" data-uid="DiscordRPC.BaseRichPresence.Type*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_Type" data-uid="DiscordRPC.BaseRichPresence.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;, NullValueHandling = NullValueHandling.Ignore)]
+public ActivityType Type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.ActivityType.html">ActivityType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="DiscordRPC_BaseRichPresence_HasAssets_" data-uid="DiscordRPC.BaseRichPresence.HasAssets*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_HasAssets" data-uid="DiscordRPC.BaseRichPresence.HasAssets">
+  HasAssets()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Does the Rich Presence have valid assets?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAssets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_HasParty_" data-uid="DiscordRPC.BaseRichPresence.HasParty*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_HasParty" data-uid="DiscordRPC.BaseRichPresence.HasParty">
+  HasParty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Does the Rich Presence have a valid party?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasParty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_HasSecrets_" data-uid="DiscordRPC.BaseRichPresence.HasSecrets*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_HasSecrets" data-uid="DiscordRPC.BaseRichPresence.HasSecrets">
+  HasSecrets()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Does the Rich Presence have valid secrets?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSecrets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_HasTimestamps_" data-uid="DiscordRPC.BaseRichPresence.HasTimestamps*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_HasTimestamps" data-uid="DiscordRPC.BaseRichPresence.HasTimestamps">
+  HasTimestamps()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Does the Rich Presence have valid timestamps?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTimestamps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="DiscordRPC_BaseRichPresence_ToRichPresence_" data-uid="DiscordRPC.BaseRichPresence.ToRichPresence*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_ToRichPresence" data-uid="DiscordRPC.BaseRichPresence.ToRichPresence">
+  ToRichPresence()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts this BaseRichPresence to RichPresence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RichPresence ToRichPresence()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DiscordRPC.RichPresence.html">RichPresence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="DiscordRPC_BaseRichPresence_op_Implicit_" data-uid="DiscordRPC.BaseRichPresence.op_Implicit*"></a>
+
+  <h3 id="DiscordRPC_BaseRichPresence_op_Implicit_DiscordRPC_BaseRichPresence__System_Boolean" data-uid="DiscordRPC.BaseRichPresence.op_Implicit(DiscordRPC.BaseRichPresence)~System.Boolean">
+  implicit operator bool(BaseRichPresence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Operator that converts a presence into a boolean for null checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool(BaseRichPresence presence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>presence</code> <a class="xref" href="DiscordRPC.BaseRichPresence.html">BaseRichPresence</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/maximmax42/discord-rpc-csharp/blob/master/DiscordRPC/Entities/RichPresence.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/CONTRIBUTING.md">Contribute</a> to this library on GitHub
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
